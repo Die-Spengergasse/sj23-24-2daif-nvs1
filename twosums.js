@@ -19,3 +19,4 @@ let bsp1 = {
     answer: [2, 3]
 };
 let erg = twoSum(bsp1.nums, bsp1.target);
+console.log(erg);

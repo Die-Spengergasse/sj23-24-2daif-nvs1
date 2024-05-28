@@ -100,4 +100,4 @@ const fragen = [
         "antwort": "1991"
     }
 ];
-module.exports = fragen
+module.exports = fragen;

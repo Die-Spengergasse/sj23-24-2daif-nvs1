@@ -18,9 +18,11 @@ const quiz$ = document.getElementById("quiz");
 
 function createFrageContainer(idx) {
     const rw = document.createElement("div");
-    frageContainer.innerHTML = `<h6>(${aktuelleFrageAnzeige}/${fragen.length})</h6> <h5>${aktuelleFrage.frage}</h5>`;
+    rw.innerHTML = `<h6>(${idx}/${state.fragen.length})</h6> <h5>${state.frage[idx]}</h5>`;
+    return rw;
 }
 
+// alles mit createElement gehört hierher!!
 
 // render
 
@@ -57,7 +59,7 @@ function render() {
     frageContainer.appendChild(optionenContainer);
     quiz$.appendChild(frageContainer);
 }
-
+// event handler
 function handleAnswer(ausgewählteOption, richtigeAntwort) {
     if (ausgewählteOption === richtigeAntwort) {
         punktzahl++;
@@ -67,5 +69,8 @@ function handleAnswer(ausgewählteOption, richtigeAntwort) {
     renderQuestion(++aktuelleFrageAnzeige);
 
 }
+// init bindings
+
+// initial render
 
 renderQuestion(aktuelleFrageIndex);

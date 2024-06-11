@@ -1,0 +1,20 @@
+{
+  "name": "tmp",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Georg Graf (SPG) <grafg@spengergasse.at>",
+  "keywords": [],
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "start": "./bin/app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "http-errors": "^2.0.0",
+    "pino": "^9.1.0",
+    "pino-http": "^10.1.0",
+    "pino-pretty": "^11.2.0"
+  }
+}

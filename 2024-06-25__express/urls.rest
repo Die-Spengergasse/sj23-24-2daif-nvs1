@@ -1,0 +1,4 @@
+GET http://localhost:1234/
+
+###
+GET http://localhost:1234/datum

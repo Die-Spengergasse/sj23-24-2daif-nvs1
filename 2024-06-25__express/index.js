@@ -8,7 +8,9 @@ const app = express();
 // app.use(/* ... */)
 // app.get(/* ... */)
 app.get("/datum", (req, res) => {
-  res.send(new Date().toLocaleString());
+  setTimeout(() => {
+    res.send(new Date().toLocaleString());
+  }, 1000);
 });
 app.use(express.static('static'));
 // Error handlers

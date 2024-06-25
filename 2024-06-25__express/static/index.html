@@ -13,7 +13,9 @@
     Hello World
     <a href="demo.html">hier die demo</a>
     <div id="datum">hier soll datum</div>
-    <button type="button" hx-get="/datum" hx-target="#datum">Hole Datum</button>
+    <button type="button" hx-get="/datum" hx-target="#datum" hx-indicator="#spinner">Hole Datum
+    </button>
+    <img id="spinner" class="htmx-indicator" src="giphy.gif" alt="anim">
 </body>
 
 </html>
